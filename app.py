@@ -221,14 +221,12 @@ def update_graphs(country, year):
         template="plotly_white",
         xaxis_title="Year",
         yaxis=dict(
-            title="Rainfall (mm)",
-            titlefont_color="#636EFA",
-            tickfont_color="#636EFA"
+            title=dict(text="Rainfall (mm)", font=dict(color="#636EFA")),
+            tickfont=dict(color="#636EFA")
         ),
         yaxis2=dict(
-            title="Depletion Rate (%)",
-            titlefont_color="#EF553B",
-            tickfont_color="#EF553B",
+            title=dict(text="Depletion Rate (%)", font=dict(color="#EF553B")),
+            tickfont=dict(color="#EF553B"),
             anchor="x",
             overlaying="y",
             side="right",
