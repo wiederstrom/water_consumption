@@ -5,9 +5,14 @@ import dash_bootstrap_components as dbc
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import pathlib
 
 
-df = pd.read_csv("global_water.csv")
+DATA_PATH = pathlib.Path().resolve()
+df = pd.read_csv(DATA_PATH / "global_water.csv")
+
+if not (DATA_PATH / "global_water.csv").exists():
+    raise FileNotFoundError("global_water.csv not found in the project directory.")
 
 
 country_list = sorted(df["Country"].unique())
