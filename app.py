@@ -27,7 +27,8 @@ sector_colors = {
 kpi_card_style = {
     "backgroundColor": "white",
     "minHeight": "90px",
-    "overflow": "visible"
+    "overflow": "visible",
+    "border": "1px solid black",
 }
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUX])
