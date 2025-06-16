@@ -1,6 +1,7 @@
 # 🌍 Global Water Use Dashboard
 
 An interactive dashboard for visualizing global water consumption trends by country, year, and sector. Built using Dash, Plotly, and pandas.
+The dashboard was developed as part of a university course in data visualization.
 
 ## 📊 Overview
 
