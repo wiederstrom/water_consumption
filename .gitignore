@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+.env/
+.envrc
+*.env
+
+# macOS metadata
+.DS_Store
+
+# Logs and cache
+*.log
+.cache/
+*.sqlite3
+
+# VSCode and other editor folders
+.vscode/
+.idea/
+
+# Dash / Plotly upload temp files
+dash-debug.log
+
+# Data files (optional)
+data/*
+!data/.gitkeep
+
+# Screenshots (optional)
+screenshots/*
+!screenshots/.gitkeep
