@@ -35,7 +35,8 @@ This dashboard provides an intuitive way to explore water use across countries f
 ├── data/
 │   └── global_water.csv   # Cleaned dataset
 ├── screenshots/
-│   └── dashboard.png      # Full-page screenshot
+│   └── screenshot1.png      # Full-page screenshot
+    └── screenshot2.png      # Full-page screenshot
 ```
 
 ## 🚀 Getting Started
