@@ -27,10 +27,10 @@ venv/
 # Dash / Plotly upload temp files
 dash-debug.log
 
-# Data files (optional)
-data/*
-!data/.gitkeep
 
-# Screenshots (optional)
-screenshots/*
-!screenshots/.gitkeep
+data/
+screenshots/
+
+
+!data/**
+!screenshots/**
