@@ -8,11 +8,13 @@ import plotly.graph_objects as go
 import pathlib
 
 
-DATA_PATH = pathlib.Path().resolve()
-df = pd.read_csv(DATA_PATH / "global_water.csv")
+DATA_PATH = pathlib.Path(__file__).parent / "data"
+data_file = DATA_PATH / "global_water.csv"
 
-if not (DATA_PATH / "global_water.csv").exists():
-    raise FileNotFoundError("global_water.csv not found in the project directory.")
+if not data_file.exists():
+    raise FileNotFoundError(f"{data_file} not found. Make sure the CSV is placed inside the /data folder.")
+
+df = pd.read_csv(data_file)
 
 
 country_list = sorted(df["Country"].unique())
