@@ -73,10 +73,23 @@ Then open your browser and visit:
 
 ## 🌐 Deployment
 
-https://water-consumption.onrender.com
+This app can be deployed using [Railway](https://railway.app/).
 
-This app is deployed using [Render](https://render.com/).  
-Custom domain support and auto-redeploys via GitHub are enabled.
+### Deploy to Railway
+
+1. Push your code to GitHub
+2. Sign up for a free account at [Railway](https://railway.app/)
+3. Click "New Project" → "Deploy from GitHub repo"
+4. Select this repository
+5. Railway will automatically detect the configuration and deploy
+6. Your app will be live at a Railway-provided URL
+
+The repository includes:
+- `Procfile` - Defines the web process
+- `railway.json` - Railway configuration
+- `requirements.txt` - Python dependencies (including gunicorn)
+
+Railway will automatically redeploy whenever you push to your main branch.
 
 ## 📊 Dataset
 
